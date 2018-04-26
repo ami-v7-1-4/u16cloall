@@ -13,4 +13,4 @@ build:
       
   ci:
     - lein version
- 
+    - docker pull shippabledocker/sample_node_pvt:ecr
