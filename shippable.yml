@@ -13,6 +13,7 @@ build:
       
   ci:
     - lein version
+    - clojure-version
     - docker pull shippabledocker/sample_node_pvt:ecr
     
 integrations:
