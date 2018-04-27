@@ -14,3 +14,31 @@ build:
   ci:
     - lein version
     - docker pull shippabledocker/sample_node_pvt:ecr
+    
+integrations:
+    
+  hub:
+ #Docker integration
+    - integrationName: ship-docker
+      type: docker 
+  #GCR integration
+    - integrationName: ship-gcr
+      type: gcr
+ # #ECR integration
+    - integrationName: ship-ecr
+      type: ecr
+      region: us-west-2
+    #  branches: #Testing the wildcards for branches exclude
+      #  except:
+       #   - n*
+    - integrationName: ship-ecreast1
+      type: ecr
+      region: us-east-1
+  #Quay.io integration    
+    - integrationName: ship-quay
+      type: quay.io
+
+  #ecr with new integration using "hub" tag in integrations
+    - integrationName: awskeys
+      type: amazonKeys      
+      region: us-west-2  
