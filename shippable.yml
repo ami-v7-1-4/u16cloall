@@ -17,28 +17,28 @@ build:
     
 integrations:
     
-  generic:
+  hub:
  #Docker integration
     - integrationName: ship-docker
-      type: docker 
+      type: dockerRegistryLogin
   #GCR integration
-    - integrationName: ship-gcr
-      type: gcr
+   # - integrationName: ship-gcr
+    #  type: gcr
  # #ECR integration
-    - integrationName: ship-ecr
-      type: ecr
-      region: us-west-2
+    #- integrationName: ship-ecr
+    #  type: ecr
+     # region: us-west-2
     #  branches: #Testing the wildcards for branches exclude
       #  except:
        #   - n*
-    - integrationName: ship-ecreast1
-      type: ecr
-      region: us-east-1
+    #- integrationName: ship-ecreast1
+    #  type: ecr
+    #  region: us-east-1
   #Quay.io integration    
-    - integrationName: ship-quay
-      type: quay.io
+    #- integrationName: ship-quay
+    #  type: quay.io
 
   #ecr with new integration using "hub" tag in integrations
-    - integrationName: awskeys
-      type: amazonKeys      
-      region: us-west-2  
+    #- integrationName: awskeys
+    #  type: amazonKeys      
+    #  region: us-west-2  
