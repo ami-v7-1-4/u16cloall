@@ -13,14 +13,14 @@ build:
       
   ci:
     - lein version
-    - echo "(print *clojure-version*)" > clojure.main  
-    - clj clojure.main
-    - java -jar /root/lib/clojure-1.8.0.jar clojure.main
-    - java -jar /root/lib/clojure-1.7.0.jar clojure.main
-    - java -jar /root/lib/clojure-1.6.0.jar clojure.main
-    - java -jar /root/lib/clojure-1.5.1.jar clojure.main
-    - java -jar /root/lib/clojure-1.4.0.jar clojure.main
-    - java -jar /root/lib/clojure-1.3.0.jar clojure.main
+    - echo "(print *clojure-version*)" 
+    #- clj clojure.main
+    #- java -jar /root/lib/clojure-1.8.0.jar clojure.main
+    #- java -jar /root/lib/clojure-1.7.0.jar clojure.main
+    #- java -jar /root/lib/clojure-1.6.0.jar clojure.main
+    #- java -jar /root/lib/clojure-1.5.1.jar clojure.main
+    #- java -jar /root/lib/clojure-1.4.0.jar clojure.main
+    #- java -jar /root/lib/clojure-1.3.0.jar clojure.main
     - docker pull shippabledocker/sample_node_pvt:ecr
     
 integrations:
