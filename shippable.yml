@@ -9,7 +9,6 @@ build:
     - lein version
     - echo "(print *clojure-version*)" > clojure.main  
     - clj clojure.main
-    - java -jar /root/lib/clojure-1.9.0.jar clojure.main
     - docker pull shippabledocker/sample_node_pvt:ecr
     
 integrations:
