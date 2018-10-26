@@ -37,4 +37,4 @@ integrations:
   #ecr with new integration using "hub" tag in integrations
     #- integrationName: awskeys
     #  type: amazonKeys      
-    #  region: us-west-2  
+    #  region: us-west-2
