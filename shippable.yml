@@ -1,7 +1,7 @@
 language: clojure
 
 lein:
- - 1.10.0
+  - 1.10.0
   
 build:
       
